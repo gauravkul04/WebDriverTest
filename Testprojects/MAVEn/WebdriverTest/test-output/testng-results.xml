@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21970" started-at="2019-03-06T05:43:41Z" finished-at="2019-03-06T05:44:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21970" started-at="2019-03-06T05:43:41Z" finished-at="2019-03-06T05:44:03Z">
+      <class name="example.NewTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:example.NewTest@3943a2be]" name="init" is-config="true" duration-ms="6483" started-at="2019-03-06T11:13:41Z" finished-at="2019-03-06T11:13:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CheckTitle()[pri:0, instance:example.NewTest@3943a2be]" name="CheckTitle" duration-ms="16" started-at="2019-03-06T11:13:48Z" finished-at="2019-03-06T11:13:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTitle -->
+        <test-method status="PASS" signature="ValidationMessage()[pri:0, instance:example.NewTest@3943a2be]" name="ValidationMessage" duration-ms="1660" started-at="2019-03-06T11:13:48Z" finished-at="2019-03-06T11:13:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidationMessage -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:example.NewTest@3943a2be]" name="Login" duration-ms="2570" started-at="2019-03-06T11:13:49Z" finished-at="2019-03-06T11:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="DashboardLoadpage()[pri:0, instance:example.NewTest@3943a2be]" name="DashboardLoadpage" duration-ms="5442" started-at="2019-03-06T11:13:52Z" finished-at="2019-03-06T11:13:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardLoadpage -->
+        <test-method status="PASS" signature="Myaccounts()[pri:0, instance:example.NewTest@3943a2be]" name="Myaccounts" duration-ms="2059" started-at="2019-03-06T11:13:57Z" finished-at="2019-03-06T11:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Myaccounts -->
+        <test-method status="PASS" signature="changePasswordchack()[pri:0, instance:example.NewTest@3943a2be]" name="changePasswordchack" duration-ms="1304" started-at="2019-03-06T11:13:59Z" finished-at="2019-03-06T11:14:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordchack -->
+        <test-method status="PASS" signature="LoginHistory()[pri:0, instance:example.NewTest@3943a2be]" name="LoginHistory" duration-ms="2210" started-at="2019-03-06T11:14:01Z" finished-at="2019-03-06T11:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginHistory -->
+        <test-method status="PASS" signature="Exitnow()[pri:0, instance:example.NewTest@3943a2be]" name="Exitnow" is-config="true" duration-ms="197" started-at="2019-03-06T11:14:03Z" finished-at="2019-03-06T11:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Exitnow -->
+      </class> <!-- example.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

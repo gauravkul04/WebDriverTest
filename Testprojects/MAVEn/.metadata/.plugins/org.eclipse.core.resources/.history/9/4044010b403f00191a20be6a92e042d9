@@ -1,0 +1,48 @@
+package example;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.firefox.FirefoxDriver;		
+import org.testng.Assert;	
+
+public class NewTest {
+	
+	WebDriver driver = new ChromeDriverService();
+	String username="";
+	String password="";
+	
+  @Test(priority=0)
+  public void testEasy() {	
+	 	driver.navigate().to("http://sh2-com.digitalhospitality.com/admin/login");
+		
+	}	
+  
+  @Test(priority=1)
+  public void testMe() {
+	  System.out.println("Hello I add this again");
+  }
+  
+  @Test(priority=2)
+  public void testNewFunction() {
+	  System.out.println("New Added");
+  }
+  @BeforeTest
+  public void beforeTest() {
+	  System.out.println("Hello");
+  }
+
+ 
+}

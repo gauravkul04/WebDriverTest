@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ToolsQA</groupId>
+  <artifactId>DemoMavenProject</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>DemoMavenProject</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+   <plugins>
+ <plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-compiler-plugin</artifactId>
+ <version>2.3.2</version>
+ <configuration>
+ <source>1.6</source>
+ <target>1.6</target>
+ </configuration>
+ </plugin>
+   </plugins>
+   <build>
+      <sourceDirectory>C:\MVN\project\src\main\java</sourceDirectory>
+      <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+
+      <testSourceDirectory>C:\MVN\project\src\test\java</testSourceDirectory>
+      <outputDirectory>C:\MVN\project\target\classes</outputDirectory>
+      <testOutputDirectory>C:\MVN\project\target\test-classes</testOutputDirectory>
+      <resources>
+         <resource>
+            <mergeId>resource-0</mergeId>
+            <directory>C:\MVN\project\src\main\resources</directory>
+         </resource>
+      </resources>
+      <testResources>
+         <testResource>
+            <mergeId>resource-1</mergeId>
+            <directory>C:\MVN\project\src\test\resources</directory>
+         </testResource>
+      </testResources>
+      <directory>C:\MVN\project\target</directory>
+      <finalName>project-1.0</finalName>
+ </build>
+ 
+</project>
+

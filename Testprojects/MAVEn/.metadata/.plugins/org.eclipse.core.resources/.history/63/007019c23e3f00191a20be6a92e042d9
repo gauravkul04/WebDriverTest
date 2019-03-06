@@ -1,0 +1,49 @@
+package example;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import org.openqa.selenium.By;		
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;		
+import org.testng.Assert;	
+
+public class NewTest {
+	
+	WebDriver driver = new FirefoxDriver();
+	String username="";
+	String password="";
+	
+  @Test(priority=0)
+  public void testEasy() {	
+	  driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.navigate().to("http://sh2-com.digitalhospitality.com/admin/login");
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(srcFile, new File("C:\\Users\\gaurav.kulshrestha\\eclipse-workspace\\webSite\\com.websiteTestSite\\Dashboard.png"));
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+	}	
+  
+  @Test(priority=1)
+  public void testMe() {
+	  System.out.println("Hello I add this again");
+  }
+  
+  @Test(priority=2)
+  public void testNewFunction() {
+	  System.out.println("New Added");
+  }
+  @BeforeTest
+  public void beforeTest() {
+	  System.out.println("Hello");
+  }
+
+ 
+}
